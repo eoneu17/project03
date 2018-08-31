@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-/* ul, ol {
+ul, ol {
   list-style: none;
-} */
+}
 
 a:link, a:visited {
   text-decoration: none;
@@ -15,18 +15,14 @@ a:link, a:visited {
 }
 
 img, a {
-  display: block;
+  display: inline-block;
 }
+
+button{cursor: pointer;}
 
 h1, h2, h3, h4, h5, h6{
   font-size: inherit;
-  font-weight: normal;
-}
-
-.clearfix{
-  content: "";
-  display: block;
-  clear: both;
+  font-weight: inherit;
 }
 
 .fs07{font-size: .7rem;}
