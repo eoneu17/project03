@@ -7,32 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Travel</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- Header -->
   <header>
     <hgroup>
-      <h1>TRAVEL</h1>
-      <h2>하이미디어</h2>
-      <form action="" class="search" method="get">
-        <label><span>SEARCH</span><span><i class="fas fa-search"></i></span><input type="text" name="search" placeholder="검색어를 입력하세요."></label
-        <button type="submit" value="search"></button>
-      </form>
-      <p>+82 02 1234 5678</p>
-      <div class="icons">
-        <span><i class="fab fa-facebook-square"></i>facebook</span>
-        <span><i class="fab fa-twitter-square"></i>twitter</span>
-        <span><i class="fab fa-instagram"></i>instagram</span>
-        <span><i class="fab fa-linkedin"></i>linkedin</span>
+      <div>
+        <h1>TRAVEL</h1>
+        <h2>하이미디어</h2>
+        <form action="" class="search" method="get">
+          <label><span>SEARCH</span><span><i class="fas fa-search"></i></span><input type="text" name="search" placeholder="검색어를 입력하세요."></label>
+          <button type="submit" value="search"></button>
+        </form>
+        <p>+82 02 1234 5678</p>
+        <div class="icons">
+          <span><i class="fab fa-facebook-square"></i>facebook</span>
+          <span><i class="fab fa-twitter-square"></i>twitter</span>
+          <span><i class="fab fa-instagram"></i>instagram</span>
+          <span><i class="fab fa-linkedin"></i>linkedin</span>
+        </div>
       </div>
     </hgroup>
     <nav>
-      <a href="#">여행도시</a>
-      <a href="#">호텔예약</a>
-      <a href="#">여행TIP</a>
-      <a href="html/about.html">회사소개</a>
-      <a href="#">커뮤니티</a>
+      <ul>
+        <li><a href="#">여행도시</a></li>
+        <li><a href="#">호텔예약</a></li>
+        <li><a href="#">여행TIP</a></li>
+        <li><a href="html/about.html">회사소개</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -56,13 +62,13 @@
               <option value="tailand">태국</option>
             </select>
           </label>
-        <label>출발일
+          <label>출발일
             <input type="date" name="departure" required>
           </label>
-        <label>도착일
+          <label>도착일
             <input type="date" name="arrival" required>
           </label>
-        <label>좌석등급
+          <label>좌석등급
             <select name="class" required>
               <option value="" hidden>일반석</option>
               <option value="first">일등석</option>
@@ -70,7 +76,7 @@
               <option value="economy">일반석</option>
             </select>
           </label>
-        <label>성인
+          <label>성인
             <select name="adult" required>
               <option value="" hidden>1명</option>
               <option value="1">1명</option>
@@ -83,7 +89,7 @@
               <option value="8">8명</option>
             </select>
           </label>
-        <label>아이
+          <label>아이
             <select name="child" required>
               <option value="" hidden>1명</option>
               <option value="1">1명</option>
@@ -96,93 +102,93 @@
               <option value="8">8명</option>
             </select>
           </label>
-        <button type="submit" value="airport_sch"><i class="fas fa-search"></i> 검색하기</button>
-      </form>
+          <button type="submit" value="airport_sch"><i class="fas fa-search"></i> 검색하기</button>
+        </form>
       </div>
       <div id="hotel" class="tabcontent"></div>
       <div id="car" class="tabcontent"></div>
       <div id="vacation" class="tabcontent"></div>
-      </content>
+    </content>
 
-      <content class="go">
-        <h3>TRAVEL <u>GO</u></h3>
-        <p>지금, 여행이 떠나고 싶다면<span>?</span><br>하이미디어와 여행을 떠나자<span>!</span></p>
-      </content>
+    <content class="go">
+      <h3>TRAVEL <u>GO</u></h3>
+      <p>지금, 여행이 떠나고 싶다면<span>?</span><br>하이미디어와 여행을 떠나자<span>!</span></p>
+    </content>
 
-      <content class="under country">
-        <h3>프랑스</h3>
-        <p>1,900,000~</p>
-        <p>&gt;</p>
-      </content>
-      <content class="under country">
-        <h3>일본</h3>
-        <p>|890,000~</p>
-        <p>&gt;</p>
-      </content>
+    <content class="under country">
+      <h3>프랑스</h3>
+      <p>1,900,000~</p>
+      <p>&gt;</p>
+    </content>
+    <content class="under country">
+      <h3>일본</h3>
+      <p>|890,000~</p>
+      <p>&gt;</p>
+    </content>
 
-      <content class="under slide">
-        <h3>HILLTON HOTEL (PARIS)</h3>
+    <content class="under slide">
+      <h3>HILLTON HOTEL (PARIS)</h3>
+      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+    </content>
+    <content class="under slide">
+      <h3>관광명소 (디즈니랜드)</h3>
+      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+    </content>
+    <content class="under">
+      <h3>20&deg;c 구름조금</h3>
+      <p>습도 60% 바람 남남동 2m/s</p>
+      <span>TOKYO</span>
+    </content>
+    <content class="under">
+      <h3>facebook 여행후기</h3>
+      <p>(임정희님)</p>
+      <article>
+        <p>"해외여행을 처음이었는데<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+        <h4>프랑스 파리 자유여행</h4>
         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-      </content>
-      <content class="under slide">
-        <h3>관광명소 (디즈니랜드)</h3>
-        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-      </content>
-      <content class="under">
-        <h3>20&deg;c 구름조금</h3>
-        <p>습도 60% 바람 남남동 2m/s</p>
-        <span>TOKYO</span>
-      </content>
-      <content class="under">
-        <h3>facebook 여행후기</h3>
-        <p>(임정희님)</p>
-        <article>
-          <p>"해외여행을 처음이었는데<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
-          <h4>프랑스 파리 자유여행</h4>
-          <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-        </article>
-      </content>
+      </article>
+    </content>
 
-      <content class="info">
-        <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
-        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
-        <button>+</button>
-      </content>
-      <content class="info">
-        <h3>맛집정보</h3>
-        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+    <content class="info">
+      <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
+      <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+      <button>+</button>
+    </content>
+    <content class="info">
+      <h3>맛집정보</h3>
+      <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
 
-        <button>+</button>
-      </content>
-      <content class="info">
-        <h3><i class="fas fa-bed"></i> 숙박정보</h3>
-        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
-        <button>+</button>
-      </content>
-      <content class="info">
-        <h3><i class="fas fa-thumbs-up"></i> 여행자후기</h3>
-        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
-        <button>+</button>
-      </content>
-      </main>
+      <button>+</button>
+    </content>
+    <content class="info">
+      <h3><i class="fas fa-bed"></i> 숙박정보</h3>
+      <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+      <button>+</button>
+    </content>
+    <content class="info">
+      <h3><i class="fas fa-thumbs-up"></i> 여행자후기</h3>
+      <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+      <button>+</button>
+    </content>
+  </main>
 
-      <!-- Footer -->
-      <footer>
-        <nav>
-          <a href="#">이용약관</a>
-          <a href="#">개인정보취급방침</a>
-          <a href="#">사이트맵</a>
-          <a href="#">고객센터</a>
-          <a href="#">광고 및 체휴문의</a>
-        </nav>
-        <div>
-          <p>123-456 서울특별시 구로구 구로동 (주)하이미디어</p>
-          <p>사업자등록번호: 123-45-66789</p>
-          <p>대표이사: 누구누</p>
-          <p>대표번호: 01-2345-6789</p>
-        </div>
-        <p>COPYRIGHT &copy; HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
-      </footer>
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보취급방침</a>
+      <a href="#">사이트맵</a>
+      <a href="#">고객센터</a>
+      <a href="#">광고 및 체휴문의</a>
+    </nav>
+    <div>
+      <p>123-456 서울특별시 구로구 구로동 (주)하이미디어</p>
+      <p>사업자등록번호: 123-45-66789</p>
+      <p>대표이사: 누구누</p>
+      <p>대표번호: 01-2345-6789</p>
+    </div>
+    <p>COPYRIGHT &copy; HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
+  </footer>
 
 </body>
 
