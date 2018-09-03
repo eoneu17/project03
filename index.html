@@ -19,8 +19,8 @@
         <h1>TRAVEL</h1>
         <h2>하이미디어</h2>
         <form action="" class="search" method="get">
-          <label><span>SEARCH</span><span><i class="fas fa-search"></i></span><input type="text" name="search" placeholder="검색어를 입력하세요."></label>
-          <button type="submit" value="search"></button>
+          <label>SEARCH<input type="text" name="search" placeholder="검색어를 입력하세요."></label>
+          <button type="submit" value="search"><i class="fas fa-search"></i></button>
         </form>
         <p>+82 02 1234 5678</p>
         <div class="icons">
@@ -36,7 +36,15 @@
         <li><a href="#">여행도시</a></li>
         <li><a href="#">호텔예약</a></li>
         <li><a href="#">여행TIP</a></li>
-        <li><a href="html/about.html">회사소개</a></li>
+        <li><a href="html/about.html">회사소개</a>
+          <ul>
+            <li><a href="html/about.html">회사소개</a></li>
+            <li><a href="#">사업영역</a></li>
+            <li><a href="#">조직도</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </li>
         <li><a href="#">커뮤니티</a></li>
       </ul>
     </nav>
@@ -45,7 +53,7 @@
 
   <!-- Main -->
   <main>
-    <content class="reservation">
+    <section class="reservation">
       <div class="tabnav">
         <button class="tab"><i class="fas fa-plane"></i>공항예약</button>
         <button class="tab"><i class="fas fa-hotel"></i>호텔예약</button>
@@ -108,38 +116,38 @@
       <div id="hotel" class="tabcontent"></div>
       <div id="car" class="tabcontent"></div>
       <div id="vacation" class="tabcontent"></div>
-    </content>
+    </section>
 
-    <content class="go">
+    <section class="go">
       <h3>TRAVEL <u>GO</u></h3>
       <p>지금, 여행이 떠나고 싶다면<span>?</span><br>하이미디어와 여행을 떠나자<span>!</span></p>
-    </content>
+    </section>
 
-    <content class="under country">
+    <section class="under country">
       <h3>프랑스</h3>
       <p>1,900,000~</p>
       <p>&gt;</p>
-    </content>
-    <content class="under country">
+    </section>
+    <section class="under country">
       <h3>일본</h3>
       <p>|890,000~</p>
       <p>&gt;</p>
-    </content>
+    </section>
 
-    <content class="under slide">
+    <section class="under slide">
       <h3>HILLTON HOTEL (PARIS)</h3>
       <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-    </content>
-    <content class="under slide">
+    </section>
+    <section class="under slide">
       <h3>관광명소 (디즈니랜드)</h3>
       <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-    </content>
-    <content class="under">
+    </section>
+    <section class="under">
       <h3>20&deg;c 구름조금</h3>
       <p>습도 60% 바람 남남동 2m/s</p>
       <span>TOKYO</span>
-    </content>
-    <content class="under">
+    </section>
+    <section class="under">
       <h3>facebook 여행후기</h3>
       <p>(임정희님)</p>
       <article>
@@ -147,29 +155,29 @@
         <h4>프랑스 파리 자유여행</h4>
         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
       </article>
-    </content>
+    </section>
 
-    <content class="info">
+    <section class="info">
       <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
       <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
       <button>+</button>
-    </content>
-    <content class="info">
+    </section>
+    <section class="info">
       <h3>맛집정보</h3>
       <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
 
       <button>+</button>
-    </content>
-    <content class="info">
+    </section>
+    <section class="info">
       <h3><i class="fas fa-bed"></i> 숙박정보</h3>
       <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
       <button>+</button>
-    </content>
-    <content class="info">
+    </section>
+    <section class="info">
       <h3><i class="fas fa-thumbs-up"></i> 여행자후기</h3>
       <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
       <button>+</button>
-    </content>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -179,7 +187,7 @@
       <a href="#">개인정보취급방침</a>
       <a href="#">사이트맵</a>
       <a href="#">고객센터</a>
-      <a href="#">광고 및 체휴문의</a>
+      <a href="#">광고 및 제휴문의</a>
     </nav>
     <div>
       <p>123-456 서울특별시 구로구 구로동 (주)하이미디어</p>
