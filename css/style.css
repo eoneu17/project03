@@ -1,18 +1,37 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-body{font-family: 'Nanum Gothic', sans-serif;}
+body{font-family: 'Nanum Gothic', sans-serif;background-image: url(../img/02풍선.png), url(../img/01배경.png);background-size: 750px 533px, cover;background-repeat: no-repeat, no-repeat;background-position: 60% 30%, center;}
+.sound_only{text-indent: -9999px;line-height: 0;font-size: 0;}
+header hgroup>div, header nav ul.depth1, main,footer{width: 980px;margin:0 auto;}
 
 /* Header */
 header{width: 100%;height: 150px;position: relative;}
-header hgroup div, header nav ul{width: 980px;margin:0 auto;}
 /* header hgroup */
 header hgroup{height: 90px;background: url(../img/04비행기.png) no-repeat center;background-size: cover;border-bottom: 1px solid #000;}
-header hgroup .sound_only{text-indent: -9999px;line-height: 0;font-size: 0;}
-
+header hgroup>div{display: flex;align-items: center;justify-content: space-between;height: 100%;color: #fff;}
+header hgroup form{margin-left: 60px;padding: 8px 16px;border-radius: 1.5rem;background: #fff;color: #000;font-weight: bold;}
+header hgroup form label{margin-left: 10px;}
+header hgroup form input{border: none;margin-left: 15px;}
+header hgroup form button{margin-right: 10px;background: none;border: none;font-size: 1rem;}
+header hgroup p{font-size: 21px;font-weight: 700;}
+header hgroup p em{font-style: normal;font-weight: 1200;}
+header hgroup .icons{font-size: 27px;}
 /* header nav */
 header nav{height: 60px;background: #FDFDFD;border-bottom: 3px solid #0E73A8;}
 header nav ul{display: flex;justify-content: space-around;align-items: center;height: 100%;}
 header nav ul.depth1>li{width: 20%;height: 100%;text-align: center;line-height: 60px;font-size: 18px;border-left: 1px solid #F0F0F0;}
+header nav ul.depth1>li:last-child{border-right: 1px solid #F0F0F0;}
 header nav .depth2{width: 100%;background: rgba(0, 0, 0,.5);height:35px;position: absolute;left: 0;bottom:-35px;display: none;position: absolute;z-index: 1;}
 header nav .depth2 ul{width: 700px;color: #fff;font-size: 16px;}
 header ul.depth1>li:hover .depth2{display: block;}
 header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
+
+/* Index Main */
+main{display: grid;grid-template: 300px 240px 240px 240px/1fr 1fr 1fr 1fr;grid-gap:15px;margin-top: 50px;margin-bottom: 30px;background: url(../img/02풍선.png;);}
+main section{background: lightyellow;}
+main .reservation{grid-column: 1/span 2;}
+
+main .go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;}
+main .go h2{font-size: 2.5rem;margin-bottom: 1rem;}
+main .go p{font-size: 1.7rem;}
+main .go p span{font-style: italic;}
