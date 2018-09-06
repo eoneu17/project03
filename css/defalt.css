@@ -3,5 +3,5 @@
 ul, ol {list-style: none;}
 a:link, a:visited {text-decoration: none;color: inherit;}
 img, a {display: inline-block;}
-button{cursor: pointer;}
+button{cursor: pointer;font-size: 1rem;}
 h1, h2, h3, h4, h5, h6{font-size: inherit;}

@@ -1,8 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-body{font-family: 'Nanum Gothic', sans-serif;background-image: url(../img/02풍선.png), url(../img/01배경.png);background-size: 750px 533px, cover;background-repeat: no-repeat, no-repeat;background-position: 60% 30%, center;}
+body{font-family: 'Nanum Gothic', sans-serif;
+background-image: url(../img/02풍선.png),linear-gradient(to top, #fff, rgba(0,0,0,0)), url(../img/01배경.png);
+background-size: 750px 533px, cover, cover;
+background-repeat: no-repeat;
+background-position: 80% 30%, 0 50%, center;}
 .sound_only{text-indent: -9999px;line-height: 0;font-size: 0;}
-header hgroup>div, header nav ul.depth1, main,footer{width: 980px;margin:0 auto;}
+header hgroup>div, header nav ul.depth1, #main, #sub section, footer{width: 980px;margin:0 auto;}
 
 /* Header */
 header{width: 100%;height: 150px;position: relative;}
@@ -19,19 +23,85 @@ header hgroup .icons{font-size: 27px;}
 /* header nav */
 header nav{height: 60px;background: #FDFDFD;border-bottom: 3px solid #0E73A8;}
 header nav ul{display: flex;justify-content: space-around;align-items: center;height: 100%;}
-header nav ul.depth1>li{width: 20%;height: 100%;text-align: center;line-height: 60px;font-size: 18px;border-left: 1px solid #F0F0F0;}
+header nav ul.depth1>li{width: 20%;height: 100%;text-align: center;line-height: 60px;font-size: 18px;border-left: 1px solid #F0F0F0;font-weight: bold;}
 header nav ul.depth1>li:last-child{border-right: 1px solid #F0F0F0;}
-header nav .depth2{width: 100%;background: rgba(0, 0, 0,.5);height:35px;position: absolute;left: 0;bottom:-35px;display: none;position: absolute;z-index: 1;}
-header nav .depth2 ul{width: 700px;color: #fff;font-size: 16px;}
+header nav .depth2{width: 100%;background: rgba(0, 0, 0,.5);height:35px;position: absolute;left: 0;bottom:-35px;display: none;position: absolute;z-index: 1;font-weight: normal;}
+header nav .depth2 ul{width: 700px;margin: 0 auto;color: #fff;font-size: 16px;}
 header ul.depth1>li:hover .depth2{display: block;}
 header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
 
-/* Index Main */
-main{display: grid;grid-template: 300px 240px 240px 240px/1fr 1fr 1fr 1fr;grid-gap:15px;margin-top: 50px;margin-bottom: 30px;background: url(../img/02풍선.png;);}
-main section{background: lightyellow;}
-main .reservation{grid-column: 1/span 2;}
+/* Main page Main */
+#main{display: grid;grid-template: 300px 240px 240px 240px/1fr 1fr 1fr 1fr;grid-gap:15px;margin-top: 50px;margin-bottom: 50px;}
+/* Main reservation */
+.reservation{grid-column: 1/span 2;display: flex}
+.reservation nav{flex-basis: 30%;}
+.reservation nav button{width: 100%;height: 25%;color: #fff;background: #0099CB;padding: 23px;text-align: justify;border: 0;font-weight: bold;}
+.reservation nav button:last-child{border-top: 1px solid #0087BF;}
+.reservation nav button:first-child{border-bottom: 1px solid #00497C;}
+.reservation nav button:first-child, .reservation nav button:nth-child(2){background: #006599;}
+.reservation nav button i{padding-right: 5px;}
+.reservation .tabcontent{padding: 30px 30px;background: #fff;flex-basis: 75%;}
+#airport label{display: inline-block;padding: 5px 0;}
+#airport label>*{padding: 5px 0;margin: 5px 0;border: 1px solid #EDEDED;}
+#airport label:first-child select{width: 100%;}
+#airport .date, #airport .seat{display: flex;justify-content: space-between;}
+#airport .seat select{width: 65px;}
+#airport .date label:first-child{margin-right: 5px;}
+#airport .date label:last-child{margin-left: 5px;}
+#airport button{background: #EA4F1F;color: #fff;border: none;border-radius: 5px;width: 100%;padding: 10px;font-weight: bold;}
+.reservation nav button.active{background: #fff;color: #0099CB;display: block;}
+.reservation .tabcontent{display: none;}
+.reservation .tabcontent.active{display: block;}
+/* Main go */
+.go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;}
+.go h2{font-size: 2.5rem;margin-bottom: 1rem;}
+.go p{font-size: 1.7rem;}
+.go p span{font-style: italic;}
+/* Main section backgrounds */
+main section:not(.not){background-size: cover;color: #fff;position: relative;}
+main section:nth-child(3){background-image: url(../img/03여행01.jpg);}
+main section:nth-child(4){background-image: url(../img/03여행02.jpg);}
+main section:nth-child(5){background-image: url(../img/03여행03.jpg);}
+main section:nth-child(6){background-image: url(../img/03여행04.jpg);}
+main section:nth-child(7){background-image: url(../img/03여행05.jpg);}
+main section:nth-child(8){background: #F5F3F4 url(../img/03여행06.jpg) no-repeat right bottom;background-size: 90%;}
+main section:nth-child(9){background-image: url(../img/03여행07.jpg);}
+main section:nth-child(10){background-image: url(../img/03여행08.jpg);}
+main section:nth-child(11){background-image: url(../img/03여행09.jpg);}
+main section:nth-child(12){background-image: url(../img/03여행10.jpg);}
+main .wrap{position: absolute;bottom: 0;width: 100%;height: 65px;background: #152630;padding: 12px 20px;}
+/* Main section country */
+.country .wrap{height: 50px;display: flex;justify-content: space-between;
+align-items: center;}
+.country h3{color: #6BBE62;}
+/* Main section row3 */
+.row3 i{color: #E3A200;}
+.row3 p{font-size: .9rem;padding: 5px 0;}
+.row3 span{position: absolute;text-align: center;top: 20px;left: 50%;transform:translateX(-50%);font-weight: bold;}
+.row3 article{padding: 15px 20px;color: #535353;line-height: 1.2rem;font-weight: bold;}
+.row3 article h4{font-size: .9rem;color: #4966A0;margin-top: 5px;}
+main section:nth-child(5) .wrap{background: #529351;}
+main section:nth-child(6) .wrap{background: #152630;}
+main section:nth-child(7) .wrap{background: rgba(0,0,0,.7);}
+main section:nth-child(8) .wrap{background: #44619D;}
+/* Main section info */
+.info .wrap{background: none;height: 100%;text-align: center;background: rgba(0,0,0,.5);}
+.info button{width: 1.5rem;height: 1.5rem;border: 1px solid #fff;border-radius: 50%;color: #fff;background: none;position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%);}
+.info .wrap div{margin-top: .5rem;}
+.info .wrap.under div{margin-top: 55%;padding-top: 1rem;}
+.info h2{margin-bottom: .5rem;font-size: 1.2rem;}
+.info p{letter-spacing: -.1rem;}
+.info i{font-size: 2rem;}
 
-main .go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;}
-main .go h2{font-size: 2.5rem;margin-bottom: 1rem;}
-main .go p{font-size: 1.7rem;}
-main .go p span{font-style: italic;}
+/* Sub page Main */
+#sub{margin-bottom: 50px;}
+#sub header{height: 300px;background: url(../img/subtitle.png);display: flex;
+align-items: center;justify-content: center;flex-direction: column;color: #fff;}
+#sub header h2{font-size: 3.5rem;}
+#sub header p{padding: 10px;}
+#sub section{background: azure;color: #000;}
+/* Footer */
+footer{margin-bottom: 30px;}
+footer a{margin-right: 3rem;font-weight: bold;padding: .5rem;}
+footer div{display: flex;}
+footer p{padding: .3rem;font-size: .9rem;}
