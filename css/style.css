@@ -41,8 +41,8 @@ header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
 .reservation nav button:first-child, .reservation nav button:nth-child(2){background: #006599;}
 .reservation nav button i{padding-right: 5px;}
 .reservation .tabcontent{padding: 30px 30px;background: #fff;flex-basis: 75%;}
-#airport label{display: inline-block;padding: 5px 0;}
-#airport label>*{padding: 5px 0;margin: 5px 0;border: 1px solid #EDEDED;}
+#airport label{display: inline-block;margin: 10px 0;}
+#airport label>*{padding: 5px 0;border: 1px solid #EDEDED;}
 #airport label:first-child select{width: 100%;}
 #airport .date, #airport .seat{display: flex;justify-content: space-between;}
 #airport .seat select{width: 65px;}
