@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 body{font-family: 'Nanum Gothic', sans-serif;
-background-image: url(../img/02풍선.png),linear-gradient(to top, #fff, rgba(0,0,0,0)), url(../img/01배경.png);
-background-size: 750px 533px, cover, cover;
+background-image: linear-gradient(to top, #fff, rgba(0,0,0,0)), url(../img/01배경.png);
+background-size: cover, cover;
 background-repeat: no-repeat;
-background-position: 80% 30%, 0 50%, center;}
+background-position: 0 50%, center;}
 .sound_only{text-indent: -9999px;line-height: 0;font-size: 0;}
-header hgroup>div, header nav ul.depth1, #main, #sub section, footer{width: 980px;margin:0 auto;}
+header hgroup>div, header nav ul.depth1, #main, #sub>section, footer{width: 980px;margin:0 auto;}
 
 /* Header */
 header{width: 100%;height: 150px;position: relative;}
@@ -33,7 +33,7 @@ header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
 /* Main page Main */
 #main{display: grid;grid-template: 300px 240px 240px 240px/1fr 1fr 1fr 1fr;grid-gap:15px;margin-top: 50px;margin-bottom: 50px;}
 /* Main reservation */
-.reservation{grid-column: 1/span 2;display: flex}
+.reservation{grid-column: 1/span 2;display: flex;z-index: 1;}
 .reservation nav{flex-basis: 30%;}
 .reservation nav button{width: 100%;height: 25%;color: #fff;background: #0099CB;padding: 23px;text-align: justify;border: 0;font-weight: bold;}
 .reservation nav button:last-child{border-top: 1px solid #0087BF;}
@@ -53,8 +53,11 @@ header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
 .reservation .tabcontent{display: none;}
 .reservation .tabcontent.active{display: block;}
 /* Main go */
-.go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;}
+.go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;position: relative;}
+.go img{position: absolute;left: -100px;bottom: -30px;}
 .go h2{font-size: 2.5rem;margin-bottom: 1rem;}
+.go h2 span{display: inline-block;}
+.go h2 span::after{content: '';display: block;border-bottom: 3px solid #000;width: 4rem;}
 .go p{font-size: 1.7rem;}
 .go p span{font-style: italic;}
 /* Main section backgrounds */
@@ -96,10 +99,28 @@ main section:nth-child(8) .wrap{background: #44619D;}
 /* Sub page Main */
 #sub{margin-bottom: 50px;}
 #sub header{height: 300px;background: url(../img/subtitle.png);display: flex;
-align-items: center;justify-content: center;flex-direction: column;color: #fff;}
+align-items: center;justify-content: center;flex-direction: column;color: #fff;text-shadow: 0 0 5px #4880AF;}
 #sub header h2{font-size: 3.5rem;}
 #sub header p{padding: 10px;}
-#sub section{background: azure;color: #000;}
+#sub>section{background:#fff;color: #6D6D6D;margin-top: -50px;padding: 65px 60px;border-top: 5px solid #0F73A7;border-bottom: 5px solid #0F73A7;position: relative;}
+#sub>section nav{float: right;}
+#sub>section nav a.active{text-decoration: underline;color: dodgerblue;}
+#sub h4{font-size: 1.5rem;font-weight: normal;}
+#sub h3{font-size: 2rem;padding: 15px 0;}
+#sub h3 span:first-child{color: #000;}
+#sub h3 span:last-child{color: #01669A;}
+#sub h5{font-size: 1.2rem;text-decoration: underline;padding: 10px 0;}
+#sub article p{width: 450px;}
+#sub table{width: 450px;text-align: left;margin: 40px 0;border-top: 2px solid #267CA8;border-bottom: 2px solid #D1D1D1;}
+#sub table th,td{border-bottom: 1px solid #ddd;padding: 5px 15px;}
+#sub table tr:last-child th,tr:last-child td{border: none;}
+#sub table th{width: 150px;background: #FBFCFE;}
+#sub>section>img{position: absolute;right: 60px;top: 65px;width: 400px;}
+#sub .tour{display: flex;justify-content: space-between;}
+#sub .tour section{width: 200px;height: 200px;background: #ccc;position: relative;overflow: hidden;}
+#sub .tour p{position: absolute;bottom: 25px;right: 25px;text-align: right;font-weight: bold;font-size: 2rem;text-shadow: 0 0 5px #000;}
+#sub .tour img{height: 200px;}
+
 /* Footer */
 footer{margin-bottom: 30px;}
 footer a{margin-right: 3rem;font-weight: bold;padding: .5rem;}
