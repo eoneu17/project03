@@ -102,20 +102,20 @@ align-items: center;justify-content: center;flex-direction: column;color: #fff;t
 #sub header h2{font-size: 3.5rem;}
 #sub header p{padding: 10px;}
 #sub>section{background:#fff;color: #6D6D6D;margin-top: -50px;padding: 65px 60px;border-top: 5px solid #0F73A7;border-bottom: 5px solid #0F73A7;position: relative;}
-#sub>section nav{float: right;}
-#sub>section nav a.active{text-decoration: underline;color: dodgerblue;}
+#sub nav{float: right;}
+#sub nav a.active{text-decoration: underline;color: dodgerblue;}
 #sub h4{font-size: 1.5rem;font-weight: normal;}
 #sub h3{font-size: 2rem;padding: 15px 0;}
 #sub h3 span:first-child{color: #000;}
 #sub h3 span:last-child{color: #01669A;}
 #sub h5{font-size: 1.2rem;padding: 10px 0;}
 #sub h5::after{border-color: #6D6D6D;}
-#sub article p{width: 450px;}
+#sub article p{width: 450px;text-align: justify;}
 #sub table{width: 450px;text-align: left;margin: 40px 0;border-top: 2px solid #267CA8;border-bottom: 2px solid #D1D1D1;}
 #sub table th,td{border-bottom: 1px solid #ddd;padding: 5px 15px;}
 #sub table tr:last-child th,tr:last-child td{border: none;}
 #sub table th{width: 150px;background: #FBFCFE;}
-#sub>section>img{position: absolute;right: 60px;top: 65px;width: 400px;}
+#sub>section>img{position: absolute;right: 60px;top: 85px;width: 400px;}
 #sub .tour{display: flex;justify-content: space-between;}
 #sub .tour section{width: 200px;height: 200px;background: #ccc;position: relative;overflow: hidden;}
 #sub .tour p{position: absolute;bottom: 25px;right: 25px;text-align: right;font-weight: bold;font-size: 2rem;text-shadow: 0 0 5px #000;}
