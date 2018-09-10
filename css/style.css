@@ -54,11 +54,20 @@ header nav .depth2 li:hover{text-shadow: 0 0 5px #fff;}
 .reservation .tabcontent.active{display: block;}
 /* Main go */
 .go{grid-column: 3/span 2;grid-row:1/span 2;padding: 35px;letter-spacing: -.1rem;position: relative;}
-.go img{position: absolute;left: -100px;bottom: -30px;}
+.go img{position: absolute;left: -100px;bottom: -30px;z-index: -1;}
 .go h2{font-size: 2.5rem;margin-bottom: 1rem;}
 .go .underline::after{border-width: 3px;}
 .go p{font-size: 1.7rem;}
 .go p span{font-style: italic;}
+.go .slideDots{position: absolute;bottom: 10px;right: 10px;}
+.go .slideDots span{display: inline-block;margin: 3px;width: 10px;height: 10px;background: #fff;border-radius: 50%}
+.go .slide{display: none;animation-name: fade;animation-duration: 1.5s;}
+.go .slide.active{display: inline-block;}
+.go .slideDots span.active{background: #0099CB;}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 /* Main section backgrounds */
 main section:not(.not){background-size: cover;color: #fff;position: relative;}
 main section:nth-child(3){background-image: url(../img/03여행01.jpg);}
@@ -71,9 +80,10 @@ main section:nth-child(9){background-image: url(../img/03여행07.jpg);}
 main section:nth-child(10){background-image: url(../img/03여행08.jpg);}
 main section:nth-child(11){background-image: url(../img/03여행09.jpg);}
 main section:nth-child(12){background-image: url(../img/03여행10.jpg);}
-main .wrap{position: absolute;bottom: 0;width: 100%;height: 65px;background: #152630;padding: 12px 20px;}
+main .wrap{position: absolute;bottom: 0;width: 100%;height: 65px;background: #152630;padding: 12px 20px;transition: .5s;}
+main section:not(.info) .wrap:hover{font-size: 1.2rem;letter-spacing: : -1.1rem;}
 /* Main section country */
-.country .wrap{height: 50px;display: flex;justify-content: space-between;
+main .country .wrap{height: 50px;display: flex;justify-content: space-between;
 align-items: center;}
 .country h3{color: #6BBE62;}
 /* Main section row3 */
@@ -85,9 +95,11 @@ align-items: center;}
 main section:nth-child(5) .wrap{background: #529351;}
 main section:nth-child(6) .wrap{background: #152630;}
 main section:nth-child(7) .wrap{background: rgba(0,0,0,.7);}
-main section:nth-child(8) .wrap{background: #44619D;}
+main section:nth-cshild(8) .wrap{background: #44619D;}
+.row3 .wrap:hover{height: 100%;padding-top: 100px;text-align: center;}
 /* Main section info */
-.info .wrap{background: none;height: 100%;text-align: center;background: rgba(0,0,0,.5);}
+.info .wrap{background: none;height: 100%;text-align: center;background: rgba(0,0,0,.4);}
+.info .wrap:hover{background: rgba(0,0,0,.8);}
 .info button{width: 1.5rem;height: 1.5rem;border: 1px solid #fff;border-radius: 50%;color: #fff;background: none;position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%);}
 .info .wrap div{margin-top: .5rem;}
 .info .wrap.under div{margin-top: 55%;padding-top: 1rem;}

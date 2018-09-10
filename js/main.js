@@ -1,8 +1,9 @@
-inputToday();
+setInputDate();
 tabMenu();
+slide();
 
 //input date value, min 오늘 날짜로
-function inputToday() {
+function setInputDate() {
   const today = document.querySelectorAll('.today');
   for (let i = 0; i < today.length; i++) {
     const inputToday = new Date().toISOString().substr(0, 10);
@@ -31,4 +32,23 @@ function tabMenu() {
       }
     }
   }
+}
+
+//슬라이드
+function slide() {
+  let count = 0;
+  setInterval(() => {
+    const slides = document.querySelectorAll('.go .slide');
+    const dots = document.querySelectorAll('.slideDots span');
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+      dots[i].classList.remove('active');
+    }
+    count++;
+    if (count >= slides.length) {
+      count = 0;
+    }
+    slides[count].classList.add('active');
+    dots[count].classList.add('active');
+  }, 3000)
 }
