@@ -50,9 +50,7 @@ function slide() {
   setInterval(() => {
     remove();
     count++;
-    if (count >= slides.length) {
-      count = 0;
-    }
+    if (count >= slides.length) count = 0;
     add();
   }, 3000);
 
