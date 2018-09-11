@@ -6,19 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .dot {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: lightyellow;
+    }
+  </style>
 </head>
 
 <body>
-  <p id="count"></p>
+  <ul>
+    <li><button class="dot">1</button></li>
+    <li><button class="dot">2</button></li>
+    <li><button class="dot">3</button></li>
+    <li><button class="dot">4</button></li>
+    <li><button class="dot">5</button></li>
+  </ul>
   <script>
-    let count = 0;
-    setInterval(() => {
-      document.getElementById('count').innerHTML = count;
-      count++;
-      if (count > 4) {
-        count = 0;
-      }
-    }, 1000)
+    const dots = document.querySelectorAll('.dot');
+    let count=0;
+    for (let i = 0; i < dots.length; i++) {
+      (function(i) {
+        dots[i].addEventListener("click", function aa() {
+          count=i;
+          alert(i);
+        })
+      })(i);
+    }
   </script>
 </body>
 
